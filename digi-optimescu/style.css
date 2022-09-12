@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+}
+button {
+  border-style: none;
+}
+.blueTxt {
+  color: #00a6ff;
+}
+body {
+  background-color: #000000;
+}
+
+/* ******************
+first section with photo 
+*************************/
+
+.first-section {
+  height: 107vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  background: url(bg-top.jpg) top center no-repeat;
+}
+.stronger {
+  font-weight: 900;
+}
+/* *********************
+NAV BAR styling 
+**********************/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 94vw;
+  position: absolute;
+  left: 2.5vw;
+  top: 45px;
+}
+.navbar a:link {
+  text-decoration: none;
+}
+.logo {
+  width: fit-content;
+}
+.back {
+  border: 1px solid white;
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.back::after {
+  content: "";
+  padding: 13px;
+  position: absolute;
+  top: 57px;
+  left: -13px;
+  transform: rotateY(0deg) rotate(45deg);
+  border: 1px solid #ffffff;
+  border-style: solid;
+  border-color: #ffffff;
+  border-top: none;
+  border-right: none;
+}
+.logo-back {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 96px;
+  justify-content: center;
+}
+
+.go-to-payment {
+  font-size: 12px;
+  font-weight: 700;
+  align-self: flex-start;
+  margin-top: 15px;
+}
+
+/* main CTA styles 
+***********************************
+*******************************/
+.main-cta {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 27px;
+  font-weight: lighter;
+}
+.main-cta h2 {
+  font-size: 35px;
+  font-weight: 900;
+  /* text-transform: uppercase; */
+}
+
+.main-cta button {
+  font-size: 14px;
+  background-color: #00a6ff;
+  padding: 25px 30px;
+  width: 255px;
+  height: 70px;
+  border-radius: 7px;
+}
+.txt-warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* between section 1 and 2 */
+
+.short-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  justify-content: center;
+  gap: 20px;
+}
+.short-description p {
+  font-size: 27px;
+}
+
+/* styling offer container */
+
+.offer-container {
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(bg-middle.jpg) bottom center no-repeat;
+  gap: 40px;
+}
+.offer-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 954px;
+
+  row-gap: 5px;
+  /* margin: 40px 0; */
+  /* column-gap: 90px; */
+  justify-items: center;
+}
+.option-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-details {
+  font-size: 16px;
+  font-weight: 300;
+  flex: 1;
+}
+
+.offer-details {
+  height: 606px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 25px;
+  padding: 40px 20px;
+  background: radial-gradient(rgba(173, 94, 57, 0.5) 5%, transparent 62%);
+  background-position: center top 200px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.ported-numbers {
+  font-size: 13px;
+  padding: 2px 8px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+}
+.price-number {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.phone-icon {
+  height: 68px;
+  /* width: 70px; */
+
+  position: relative;
+}
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  box-shadow: -5px -5px 5px #ffffff85;
+}
+
+.access-offer {
+  font-size: 14px;
+  background-color: #00a6ff;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.price-number {
+  position: relative;
+}
+.crossed::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: inherit;
+  background: linear-gradient(
+    -45deg,
+    transparent calc(50% - 2px),
+    #6c6c6c calc(50% - 2px),
+    #6c6c6c calc(50% + 2px),
+    transparent calc(50% + 2px)
+  );
+}
+.offer-details h4 {
+  font-size: 20px;
+}
+
+/* styling the CTA after offers */
+.alternative-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 27px;
+}
+.discover {
+  font-size: 14px;
+  background-color: #00a6ff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+/* video section */
+
+.video-presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 27px;
+  font-weight: lighter;
+  position: relative;
+}
+.video-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -90px;
+}
+
+/* phone offers section */
+
+.phones-container {
+  display: flex;
+  align-content: space-between;
+  margin-top: 30px;
+  gap: 30px;
+}
+.phone-info {
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 5px;
+}
+.phone-info p {
+  color: #00a6ff;
+}
+.phone-info .phone-name {
+  color: #5823cc;
+  margin-top: 10px;
+}
+.phone-name {
+  font-size: 14px;
+}
+.phone-info {
+  font-size: 12px;
+}
+.phone-info .see-details-btn {
+  color: #0a5ebd;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.phone-offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+/* last background pshoto, no content */
+.last-photo {
+  height: 77vh;
+  background: url(bg-bottom.jpg) top center no-repeat;
+}
+
+.phone-offers h6 {
+  font-size: 27px;
+  font-weight: lighter;
+}
+
+.discover-all-phones-btn {
+  font-size: 14px;
+  color: white;
+  background-color: #00a6ff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 40px;
+  width: 330px;
+  height: 50px;
+}
+/* footer */
+footer {
+  font-size: 12px;
+  width: 1197px;
+  height: 95px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  font-style: italic;
+}
+.footer {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
